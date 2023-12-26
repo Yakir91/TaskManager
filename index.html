@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- Add Lato font -->
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="task-container"></div>
+        <div>
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="undo()">Undo</button>
+            <button onclick="clearCompletedTasks()">Clear Completed</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

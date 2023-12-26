@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background-color: #2d6cd13c; /* Add a background color */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#task-container {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    background-color: #c0e6c1;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.3s;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.task button.edit-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.task button.edit-button:hover {
+    background-color: #2980b9;
+}
+
+.task button.toggle-button {
+    background-color: #db6034;
+    color: white;
+}
+
+.task button.toggle-button:hover {
+    background-color: #b99c29;
+}
+
+.task button.delete-button {
+    background-color: #eae027;
+    color: white;
+}
+
+.task input[type="text"] {
+    width: 80%; /* Adjust the width of the input field */
+}
+
+.task button.confirm-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.task button.confirm-button:hover {
+    background-color: #2980b9;
+}
+
+button.undo-button {
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+button.undo-button:hover {
+    background-color: #2980b9;
+}
+
+.task.dragging {
+    opacity: 0.5;
+}
